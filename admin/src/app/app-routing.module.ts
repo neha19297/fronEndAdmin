@@ -12,13 +12,14 @@ import { QuestionUploadComponent } from './question-upload/question-upload.compo
 import { RatingComponent } from './rating/rating.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
-import { VideoComponent } from './video/video.component';
 import { TeachersQueBankComponent } from './teachers-que-bank/teachers-que-bank.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { PersonalDetailsComponent } from './personal-details/personal-details.component';
 import { MyUploadsComponent } from './my-uploads/my-uploads.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DraftComponent } from './draft/draft.component';
+import { CreateCourseComponent } from './create-course/create-course.component';
+import { VideoComponent } from './video/video.component';
 
 
 
@@ -80,6 +81,11 @@ const routes: Routes = [
  {
   path:'questionBank',
   component:QuestionBankComponent,
+  // canActivate:[AuthGuard]
+ },
+ {
+  path:'createCourse',
+  component:CreateCourseComponent,
   // canActivate:[AuthGuard]
  },
  {

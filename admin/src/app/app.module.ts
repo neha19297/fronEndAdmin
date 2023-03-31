@@ -22,7 +22,6 @@ import { QuestionUploadComponent } from './question-upload/question-upload.compo
 import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
-import { VideoComponent } from './video/video.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FooterComponent } from './footer/footer.component';
@@ -45,6 +44,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { PersonalDetailsComponent } from './personal-details/personal-details.component';
 import { MyUploadsComponent } from './my-uploads/my-uploads.component';
 import { DraftComponent } from './draft/draft.component';
+import { CreateCourseComponent } from './create-course/create-course.component';
+import { VideoComponent } from './video/video.component';
 
 // import {MatSnackBar} from '@angular/material/snack-bar';
 @NgModule({
@@ -57,7 +58,7 @@ import { DraftComponent } from './draft/draft.component';
     QuestionUploadComponent,
     HomeComponent,
     ResetPasswordComponent,
-    VideoComponent,
+  VideoComponent,
     FooterComponent,
     CartComponent,
     QuestionBankComponent,
@@ -70,6 +71,7 @@ import { DraftComponent } from './draft/draft.component';
     PersonalDetailsComponent,
     MyUploadsComponent,
     DraftComponent,
+    CreateCourseComponent,
      
     
   ],
