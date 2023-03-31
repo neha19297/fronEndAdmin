@@ -18,6 +18,7 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
 import { PersonalDetailsComponent } from './personal-details/personal-details.component';
 import { MyUploadsComponent } from './my-uploads/my-uploads.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { DraftComponent } from './draft/draft.component';
 
 
 
@@ -54,6 +55,10 @@ const routes: Routes = [
  {
   path:'personalDetails',
   component:PersonalDetailsComponent
+ },
+ {
+  path:'draft',
+  component:DraftComponent
  },
  {
   path:'myUploads',

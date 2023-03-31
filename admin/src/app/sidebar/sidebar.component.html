@@ -1,1 +1,21 @@
-<p>sidebar works!</p>
+<mat-toolbar>
+    <button mat-button (click)="opened=!opened"><mat-icon>menu</mat-icon></button>   
+    </mat-toolbar>
+    <mat-sidenav-container>
+        <mat-sidenav [(opened)]="opened"  mode="side">
+            <mat-list>
+                <mat-list-item> <a routerLink="/personalDetails"> Personal Details</a></mat-list-item>
+                <mat-list-item> <a routerLink="/myUploads"> MyUploads</a></mat-list-item>
+                <mat-list-item> <a routerLink="/draft"> Draft</a></mat-list-item>
+                <mat-list-item> <a routerLink="/logOut"> Logout</a></mat-list-item>
+
+            </mat-list>
+           
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+ 
+    

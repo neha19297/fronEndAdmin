@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { que_upload } from '../dataType';
 import { QuestionUploadService } from '../services/question-upload.service';
-import {MatDialog} from '@angular/material/dialog';
-import { DialogComponent } from '../dialog/dialog.component';
+
 @Component({
   selector: 'app-question-bank',
   templateUrl: './question-bank.component.html',
@@ -39,9 +38,5 @@ list(){
     this.questionList=result;
   })
 }
-// openDialog() {
-//   this.dialog.open(DialogComponent, {
-//     width:'30%'
-//   });
-// }
+
 }

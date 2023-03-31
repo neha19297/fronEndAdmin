@@ -44,6 +44,7 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PersonalDetailsComponent } from './personal-details/personal-details.component';
 import { MyUploadsComponent } from './my-uploads/my-uploads.component';
+import { DraftComponent } from './draft/draft.component';
 
 // import {MatSnackBar} from '@angular/material/snack-bar';
 @NgModule({
@@ -68,6 +69,7 @@ import { MyUploadsComponent } from './my-uploads/my-uploads.component';
     SidebarComponent,
     PersonalDetailsComponent,
     MyUploadsComponent,
+    DraftComponent,
      
     
   ],
