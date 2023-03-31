@@ -1,0 +1,69 @@
+<!-- <img class="back-img" src="assets/G2I login background.gif" alt="back-img"/>   -->
+
+<div>
+  <h1>G2I LOGIN</h1>
+  
+</div>
+
+
+  <div>
+    
+      <form  #login="ngForm" (ngSubmit)="loginFn()"
+      name="loginForm" [formGroup]="loginForm">
+        
+       <div>
+        <mat-form-field appearance="outline"> 
+          <mat-label>Email</mat-label>
+            <input formControlName="email" matInput />
+          <mat-error *ngIf="!loginForm.controls['email'].valid">
+              Email is required
+          </mat-error>
+        </mat-form-field>
+      
+       </div>
+           
+        <br>
+        <div>
+        <mat-form-field appearance="outline" >
+    <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'"> 
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+    <mat-error *ngIf="!loginForm.controls['password'].valid">
+      Password is required
+    </mat-error>
+
+  </mat-form-field>
+<div>
+  <a routerLink="/resetPassword">Reset password </a>
+  
+</div>
+        </div>      
+        <div style="padding-top:30%">
+          <button (click)="loginFn()"
+          >LOGIN</button>
+
+        </div>
+        <br><br>
+          <a routerLink="/registration-form"> New User? Click to Sign Up</a>
+          <h6 style="margin-left: 15%;">Or sign in with</h6>
+        
+
+          <button mat-button style="padding: 1rem;"><img src="/assets/Group.png">
+          </button>  
+          
+          <button  mat-button style="padding: 1rem;margin-left: 20%;"><img src="/assets/apple-black 1.png">
+            <!-- Login With Apple -->
+          </button>  
+      </form>
+    
+  
+    </div>
+  
+
+  
+
+
+        
+

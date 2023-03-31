@@ -1,0 +1,6 @@
+@function bg($color){
+    @return var(--colorCode-#{$color});
+}
+@function gi($gif){
+    @return var(--background-#{$gif});
+}

@@ -1,0 +1,205 @@
+{
+  "userRegistration": [
+    {
+      "fname": "neha",
+      "lname": "mahajan",
+      "mobile": "1234567890",
+      "email": "asd@gmail.com",
+      "password": "qwertyuiop",
+      "cpassword": "qwertyuiop",
+      "id": 1
+    },
+    {
+      "fname": "abc",
+      "lname": "abcd",
+      "mobile": "1234567890",
+      "email": "abcd@gmail.com",
+      "password": "abcdefghij",
+      "cpassword": "abcdefghij",
+      "id": 2
+    },
+    {
+      "fname": "neha",
+      "lname": "Mahajan",
+      "mobile": "1234567890",
+      "email": "acd@gmail.com",
+      "password": "asdfghjkl",
+      "cpassword": "asdfghjkl",
+      "id": 3
+    },
+    {
+      "fname": "neha",
+      "lname": "mahajan",
+      "mobile": "1234567890",
+      "email": "neha@gmail.com",
+      "password": "neha@123",
+      "cpassword": "neha@123",
+      "id": 4
+    },
+    {
+      "observe": "response",
+      "id": 5
+    },
+    {
+      "observe": "response",
+      "id": 6
+    },
+    {
+      "fname": "qeeeer",
+      "email": "asd@gmail.com",
+      "password": "qwertyuiop",
+      "cpassword": "qwertyuiop",
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "fname": "asdfgh",
+      "email": "asdf@gmail.com",
+      "password": "qwertyuiop",
+      "cpassword": "qwertyuiop",
+      "id": 12
+    },
+    {
+      "fname": "shubham ",
+      "email": "shubham@gmail.com",
+      "password": "qwertyuio",
+      "cpassword": "qwertyuio",
+      "id": 13
+    }
+  ],
+  "bankDetail": [],
+  "login": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    }
+  ],
+  "question_upload": [
+    {
+      "que_num": 6,
+      "subject": "Science",
+      "chapter": "sdfgh",
+      "description": "asrthgcxvbn",
+      "category": "Multi Choice",
+      "que_option": "Advance",
+      "option": "dfhjnb",
+      "answer": "f",
+      "id": 1
+    },
+    {
+      "que_num": 5,
+      "subject": "Mathematics",
+      "chapter": "werre",
+      "description": "dfghvcvb",
+      "category": "Single",
+      "que_option": "Intermediate",
+      "option": "adfgrgfdre",
+      "answer": "w",
+      "id": 2
+    },
+    {
+      "que_num": 6,
+      "subject": "Science",
+      "chapter": "wedrftg",
+      "description": "fdfh b mjhnm",
+      "category": "Multi Choice",
+      "que_option": "Intermediate",
+      "option": "dgcbhxf",
+      "answer": "b",
+      "id": 3
+    },
+    {
+      "que_num": 8,
+      "subject": "Geography",
+      "chapter": "txghtrhf",
+      "description": "hfxjfhn",
+      "category": "Multi Choice",
+      "que_option": "Intermediate",
+      "option": "fhvxh",
+      "answer": "gbgfhtzgfxn",
+      "id": 4
+    },
+    {
+      "que_num": 5,
+      "subject": "Hindi",
+      "chapter": "dehtgfrth",
+      "description": "ASzdxfchgjhcv b",
+      "category": "Multi Choice",
+      "que_option": "Intermediate",
+      "option": "fhyjxytcjhgm",
+      "answer": "a",
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "que_num": 4,
+      "subject": "Science",
+      "chapter": "atom",
+      "description": "atomic mass number",
+      "category": "Single",
+      "que_option": "Advance",
+      "option": "a.12\nb.23",
+      "answer": "a",
+      "id": 7
+    }
+  ],
+  "uploadFile": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    }
+  ]
+}

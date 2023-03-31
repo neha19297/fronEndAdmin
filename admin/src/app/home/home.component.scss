@@ -1,0 +1,45 @@
+@import '../../styles.scss';
+mat-card{
+    box-sizing: border-box;
+
+position: absolute;
+width: 259px;
+height: 324px;
+// left: 108px;
+top: 61px;
+
+background: #F6F6F6;
+border: 1px solid #000000;
+border-radius: 15px;
+    mat-card-header{
+        
+width: 259px;
+height: 132px;
+left: 100px;
+top: 800px;
+margin-left: -17px;
+    margin-top: -17px;
+background-color: #A16AE6;
+    }
+}
+.provide{
+    width: 248.76px;
+height: 238px;
+top: 2219px;
+}
+h3{
+    position: absolute;
+width: 286px;
+height: 56px;
+left: 112px;
+top: 1254px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+
+color: #000000;
+}
