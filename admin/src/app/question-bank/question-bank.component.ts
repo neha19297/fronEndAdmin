@@ -10,12 +10,12 @@ import {MatTableDataSource} from "@angular/material/table";
 })
 export class QuestionBankComponent implements OnInit {
 // questionList:que_upload[]=question_upload;
-questionList:que_upload[]=[];
+questionList:any=[];
   public displayedColumns: string[] = ['que_num','subject', 'chapter','description',
   'category','que_option','option','answer','id'];
   // public dataSource = this.questionList;
   queDeleteMsg:undefined | string;
-  public dataSource = new MatTableDataSource<que_upload>();
+  dataSource:MatTableDataSource<any> =new MatTableDataSource<any>();
   constructor(public queService:QuestionUploadService ) { 
   }
  
@@ -37,9 +37,10 @@ deleteQue(id:number){
 list(){
   // this.questionList.push({"que_no":123});
   this.queService.queList().subscribe((result)=>{
+    this.questionList=result;
     console.log(result);
     // this.questionList.push(result[0].que_no);
-     this.dataSource.data=result;
+      this.dataSource=new MatTableDataSource<que_upload>(this.questionList);
   })
   
 }
