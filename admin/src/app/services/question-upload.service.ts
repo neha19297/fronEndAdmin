@@ -10,14 +10,15 @@ que_api=environment.que_api;
   constructor(private http :HttpClient) { }
 que_upload(data:que_upload){
   // console.log("service called");
-  return this.http.post(this.que_api,data)
+   return this.http.post(this.que_api,data)
+  
 }//post to local host
 queList(){
   return this.http.get<que_upload[]>(this.que_api);
 }
 deleteQuestion(id:number){
 return this.http.delete('http://localhost:3000/question_upload/${id}')
-}
+}//to delete que based on id
 getQue(id:string){
   return this.http.get<que_upload>('http://localhost:3000/question_upload/${id}')
 }

@@ -1,22 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { que_upload } from '../dataType';
 import { QuestionUploadService } from '../services/question-upload.service';
-
+import {MatTableDataSource} from "@angular/material/table";
+// import question_upload from '../../db.json';
 @Component({
   selector: 'app-question-bank',
   templateUrl: './question-bank.component.html',
   styleUrls: ['./question-bank.component.scss']
 })
 export class QuestionBankComponent implements OnInit {
-  // displayedColumns: string[] = ['que_no', 'subject', 'chapter',
-  //  'description','category','que_option','option','answer'];
-   
-
-  constructor(public queService:QuestionUploadService ) { }
-  questionList:undefined | que_upload[]  ;
+// questionList:que_upload[]=question_upload;
+questionList:que_upload[]=[];
+  public displayedColumns: string[] = ['que_num','subject', 'chapter','description',
+  'category','que_option','option','answer','id'];
+  // public dataSource = this.questionList;
   queDeleteMsg:undefined | string;
-  
-    // dataSource = this.queService;
+  public dataSource = new MatTableDataSource<que_upload>();
+  constructor(public queService:QuestionUploadService ) { 
+  }
+ 
   ngOnInit(): void {
     this.list();
   }
@@ -33,10 +35,13 @@ deleteQue(id:number){
   },3000)
 }
 list(){
+  // this.questionList.push({"que_no":123});
   this.queService.queList().subscribe((result)=>{
     console.log(result);
-    this.questionList=result;
+    // this.questionList.push(result[0].que_no);
+     this.dataSource.data=result;
   })
+  
 }
 
 }

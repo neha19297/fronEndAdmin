@@ -1,4 +1,3 @@
- <!-- <img class="back-img" src="assets/G2I login background.gif" alt="back-img"/>   -->
 <div>
   <h1>Bank Details</h1>
 
@@ -7,8 +6,6 @@
 <div>
     <form [formGroup]="bankForm" #bank="ngForm"
     (ngSubmit)="bankForm.status !== 'INVALID' && bankFn(bank.value)">
-   
-            
          <div>
             <mat-form-field appearance="outline" >
                 <mat-label>Banks</mat-label>

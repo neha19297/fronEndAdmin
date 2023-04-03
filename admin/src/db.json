@@ -10,7 +10,7 @@
       "id": 1
     },
     {
-      "fname": "abc",
+      "fname": "sneha",
       "lname": "abcd",
       "mobile": "1234567890",
       "email": "abcd@gmail.com",
@@ -162,6 +162,17 @@
       "option": "a.12\nb.23",
       "answer": "a",
       "id": 7
+    },
+    {
+      "que_num": 4,
+      "subject": "Mathematics",
+      "chapter": "integration",
+      "description": "triple integration",
+      "category": "Multi Choice",
+      "que_option": "Intermediate",
+      "option": "a b c d",
+      "answer": "a",
+      "id": 8
     }
   ],
   "uploadFile": [

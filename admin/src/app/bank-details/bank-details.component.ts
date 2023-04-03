@@ -26,7 +26,7 @@ ifsc : new FormControl ("",[Validators.required]),
         Validators.maxLength(10), 
         Validators.pattern(this.integreRegex)])
       },[ accountMatch("account", "cAccount") ])
-  constructor(private bankDetails: BankDetailsServiceService) { }
+  constructor(private bankService: BankDetailsServiceService) { }
 
   ngOnInit(): void {
     
@@ -36,8 +36,13 @@ ifsc : new FormControl ("",[Validators.required]),
     return this.bankForm.get(name)
 
   }
-  bankFn(data:object):void{
-    console.log(data );
+  bankFn(data:bankDetail):void{
+    console.log(this.bankForm.value );
+    this.bankService.accountData(data)
+    // .subscribe((result)=>{
+    //   console.log(result);
+      
+    // });
     // this.bankDetails.accountData(data);
   }
   
