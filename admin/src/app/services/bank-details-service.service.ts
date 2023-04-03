@@ -18,9 +18,9 @@ export class BankDetailsServiceService {
   accountData(data:bankDetail){
     
     console.log("service called");
-     let result= this.http.post(this.bank_api,data)
-     .subscribe((result)=>{
-      console.log(result)});
+    return this.http.post(this.bank_api,data)
+    //  .subscribe((result)=>{
+    //   console.log(result)});
      }
     // )
     // .subscribe((result)=>{

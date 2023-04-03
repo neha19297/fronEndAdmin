@@ -47,6 +47,7 @@ import { MyUploadsComponent } from './my-uploads/my-uploads.component';
 import { DraftComponent } from './draft/draft.component';
 import { CreateCourseComponent } from './create-course/create-course.component';
 import { VideoComponent } from './video/video.component';
+import { PaymentComponent } from './payment/payment.component';
 
 // import {MatSnackBar} from '@angular/material/snack-bar';
 @NgModule({
@@ -73,6 +74,7 @@ import { VideoComponent } from './video/video.component';
     MyUploadsComponent,
     DraftComponent,
     CreateCourseComponent,
+    PaymentComponent,
      
     
   ],

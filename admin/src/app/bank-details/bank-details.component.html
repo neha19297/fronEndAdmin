@@ -5,8 +5,9 @@
 
 <div>
     <form [formGroup]="bankForm" #bank="ngForm"
-    (ngSubmit)="bankForm.status !== 'INVALID' && bankFn(bank.value)">
-         <div>
+    (ngSubmit)="bankFn(bank.value)">
+   
+      <div>
             <mat-form-field appearance="outline" >
                 <mat-label>Banks</mat-label>
                 <mat-select name="bank">
@@ -77,8 +78,7 @@
              
             </div>  -->
             <div>
-              <button 
-               [disabled]="bankForm.status === 'INVALID'">SUBMIT</button>
+              <button>SUBMIT</button>
       
             </div>
 

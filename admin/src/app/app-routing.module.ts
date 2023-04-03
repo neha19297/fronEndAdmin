@@ -20,6 +20,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DraftComponent } from './draft/draft.component';
 import { CreateCourseComponent } from './create-course/create-course.component';
 import { VideoComponent } from './video/video.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 
@@ -31,6 +32,10 @@ const routes: Routes = [
  {
   path:'registration-form',
   component:RegistrationFormComponent
+ } ,
+ {
+  path:'payment',
+  component:PaymentComponent
  } ,
  {
   path:'queUpdate/:id',

@@ -3,6 +3,7 @@ import {  AbstractControl, FormControl, FormGroup, Validators } from '@angular/f
 import { accountMatch } from '../accountMatch';
 import {bankDetail} from'../dataType';
 import { BankDetailsServiceService } from '../services/bank-details-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bank-details',
@@ -22,11 +23,13 @@ ifsc : new FormControl ("",[Validators.required]),
   account : new FormControl("", [Validators.required, Validators.minLength(10), 
       Validators.maxLength(10), 
       Validators.pattern(this.integreRegex)]),
-  cAccount : new FormControl("", [Validators.required, Validators.minLength(10), 
-        Validators.maxLength(10), 
-        Validators.pattern(this.integreRegex)])
-      },[ accountMatch("account", "cAccount") ])
-  constructor(private bankService: BankDetailsServiceService) { }
+  // cAccount : new FormControl("", [Validators.required, Validators.minLength(10), 
+  //       Validators.maxLength(10), 
+  //       Validators.pattern(this.integreRegex)])
+      }
+      // ,[ accountMatch("account", "cAccount") ]
+      )
+  constructor(private bankService: BankDetailsServiceService,private router :Router) { }
 
   ngOnInit(): void {
     
@@ -36,13 +39,16 @@ ifsc : new FormControl ("",[Validators.required]),
     return this.bankForm.get(name)
 
   }
-  bankFn(data:bankDetail):void{
-    console.log(this.bankForm.value );
+  bankFn(data:bankDetail){
+    console.log(data );
     this.bankService.accountData(data)
-    // .subscribe((result)=>{
-    //   console.log(result);
+     .subscribe((result)=>{
+      console.log(result);
+      if(result){
+      this.router.navigate(['payment'])
+      }
       
-    // });
+    });
     // this.bankDetails.accountData(data);
   }
   

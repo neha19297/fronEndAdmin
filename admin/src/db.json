@@ -78,7 +78,29 @@
       "id": 13
     }
   ],
-  "bankDetail": [],
+  "bankDetail": [
+    {
+      "bank": "",
+      "name": "",
+      "ifsc": "",
+      "account": 1234567890,
+      "id": 1
+    },
+    {
+      "bank": "",
+      "name": "",
+      "ifsc": "",
+      "account": "",
+      "id": 2
+    },
+    {
+      "bank": "",
+      "name": "",
+      "ifsc": "",
+      "account": 987654321,
+      "id": 3
+    }
+  ],
   "login": [
     {
       "id": 1
