@@ -1,6 +1,5 @@
 <div>
-    
-     
+<!--     
     <div>
         <header style="display:flex;position: absolute;
         width: 1440px;
@@ -34,7 +33,51 @@
                 top: 47px;color:#2E0A57">Teacher's Name</h3>
             </li>
         </header>
-    </div>
+    </div> -->
+    <mat-toolbar>
+        <button mat-button (click)="opened=!opened"><mat-icon>menu</mat-icon></button>   
+        <li>
+            <h3 style="position: absolute;
+            width: 368px;
+            height: 46px;
+            left: 116px;
+            top: 32px;
+            color:#2E0A57;"> Global Genius Index (G2I)</h3>
+        </li>
+        <li>
+            <a style="position: absolute;
+            width: 54px;
+            height: 23px;
+            left: 631px;
+            top: 54px;
+            color:#2E0A57;" routerLink=''>Home</a>
+        </li>
+        
+        <li>
+            <h3 style="position: absolute;
+            width: 256px;
+            height: 31px;
+            left: 1135px;
+            top: 47px;color:#2E0A57">Teacher's Name</h3>
+        </li>
+    </mat-toolbar>
+        <mat-sidenav-container>
+            <mat-sidenav [(opened)]="opened"  mode="side">
+                <mat-list>
+                    <mat-list-item> <a routerLink="/personalDetails"> Personal Details</a></mat-list-item>
+                    <mat-list-item> <a routerLink="/myUploads"> MyUploads</a></mat-list-item>
+                    <mat-list-item> <a routerLink="/draft"> Draft</a></mat-list-item>
+                    <mat-list-item> <a routerLink="/logOut"> Logout</a></mat-list-item>
+    
+                </mat-list>
+               
+            </mat-sidenav>
+            <mat-sidenav-content>
+                <router-outlet></router-outlet>
+    
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+     
     
     <div>
         <app-footer></app-footer>

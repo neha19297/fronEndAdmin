@@ -4,7 +4,7 @@
     height: 100%;
 }
 mat-draver{
-    width:260px;
+    width:16.25rem;
 background-color: rgba(196, 158, 245, 0.69);
 }
 mat-drawer-container{
@@ -17,21 +17,21 @@ mat-toolbar {
 }
 
 mat-sidenav {
-    margin: 16px;
-    width: 200px;
+    margin: 1rem;
+    width: 12.5rem;
     border-right: none;
     background: #002b5c;
     color: white;
-    border-radius: 10px;
-    padding: 16px;
+    border-radius: 0.625em;
+    padding: 1rem;
     text-align: center;
 }
 
 .content {
     height: calc(100vh - 98px);
-    border-radius: 10px;
-    margin: 16px;
-    margin-left: 32px;
+    border-radius: 0.625rem;
+    margin: 1rem;
+    margin-left: 2rem;
 
     display: flex;
     justify-content: center;
@@ -43,5 +43,38 @@ mat-sidenav {
 
 mat-sidenav-container {
     height: calc(100vh - 65px);
+    margin-top:5%;
+}
+mat-toolbar {
+    background-color: white;
+}
+
+mat-sidenav {
+    margin: 1rem;
+    width: 12.5rem;
+    border-right: none;
+    background: rgba(196, 158, 245, 0.69);
+    color: white;
+    border-radius: 0.625rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.content {
+    height: calc(100vh - 98px);
+    border-radius:  0.625rem;
+    margin: 1rem;
+    margin-left: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    color: lightgray;
+}
+
+mat-sidenav-container {
+    height: calc(100vh - 4.063rem);
     margin-top:5%;
 }
