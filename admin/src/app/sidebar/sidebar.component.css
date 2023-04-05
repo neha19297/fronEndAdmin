@@ -1,0 +1,32 @@
+mat-toolbar {
+  background: #004a9f;
+  color: white;
+}
+
+mat-sidenav {
+  margin: 1rem;
+  width: 12.5rem;
+  border-right: none;
+  background: rgba(196, 158, 245, 0.69);
+  color: white;
+  border-radius: 0.625rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.content {
+  height: calc(100vh - 98px);
+  border-radius: 0.625rem;
+  margin: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: lightgray;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+  margin-top: 5%;
+}/*# sourceMappingURL=sidebar.component.css.map */

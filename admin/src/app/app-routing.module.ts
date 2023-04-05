@@ -21,6 +21,7 @@ import { DraftComponent } from './draft/draft.component';
 import { CreateCourseComponent } from './create-course/create-course.component';
 import { VideoComponent } from './video/video.component';
 import { PaymentComponent } from './payment/payment.component';
+import { ElementaryComponent } from './question-bank/elementary/elementary.component';
 
 
 
@@ -110,6 +111,10 @@ const routes: Routes = [
  {
   path:'cart',
   component:CartComponent
+ },
+ {
+  path:'elementary',
+  component:ElementaryComponent
  },
 ];
 
