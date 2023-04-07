@@ -30,3 +30,11 @@ export interface que_upload{
     answer:string;
     id:number;
 }
+export interface courses{
+    courseType:string;
+    courseName:string;
+    class:string;
+    syllabus:string;
+    board:string;
+    image: any;
+}

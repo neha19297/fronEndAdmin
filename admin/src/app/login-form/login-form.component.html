@@ -1,14 +1,14 @@
 <!-- <img class="back-img" src="assets/G2I login background.gif" alt="back-img"/>   -->
 
-<div>
-  <h1>G2I LOGIN</h1>
+<div style="background: #35185A ;">
+  <h1>G2I</h1>
   
 </div>
 
 
   <div>
     
-      <form  #login="ngForm" (ngSubmit)="loginFn()"
+      <form  #login="ngForm" (ngSubmit)="loginFn(loginForm)"
       name="loginForm" [formGroup]="loginForm">
         
        <div>
@@ -26,8 +26,9 @@
         <div>
         <mat-form-field appearance="outline" >
     <mat-label>Enter your password</mat-label>
-    <input matInput [type]="hide ? 'password' : 'text'"> 
-    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+    <input matInput formControlName="password" [type]="hide ? 'password' : 'text'"> 
+    <button mat-icon-button matSuffix (click)="hide = !hide" 
+    [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
       <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
     <mat-error *ngIf="!loginForm.controls['password'].valid">
@@ -41,7 +42,7 @@
 </div>
         </div>      
         <div style="padding-top:30%">
-          <button (click)="loginFn()"
+          <button type="submit"
           >LOGIN</button>
 
         </div>

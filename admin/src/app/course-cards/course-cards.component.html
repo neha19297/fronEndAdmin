@@ -1,0 +1,129 @@
+<header style="display:flex;position: absolute;
+        width: 90rem;
+        height: 8.125rem;
+        left: 0rem;
+        top: 0rem;
+        
+        background: #FFFFFF;">
+            <li>
+                <h3 style="position: absolute;
+                width: 23rem;
+                height: 2.875rem;
+                left:3.5rem;
+                top: 2rem;
+                color:#2E0A57;"> Global Genius Index <br>(G2I)</h3>
+            </li>
+            <li ><mat-form-field  style="box-sizing: border-box;
+
+                position: absolute;
+                width: 350px;
+                height: 66px;
+                left: 300px;
+                top: 24px;
+                
+                border: 1px solid #000000;
+                border-radius: 30px;">
+                <mat-label>Search </mat-label>
+                <input matInput  />
+                <mat-icon matPrefix>search</mat-icon>
+              </mat-form-field></li>
+            <li>
+                <a style="position: absolute;
+                width: 3.375rem;
+                height: 1.438rem;
+                left: 750px;
+top: 54px;
+                color:#2E0A57;" routerLink=''>Home</a>
+            </li>
+            <li>
+                <mat-form-field appearance="outline" style="position: absolute;
+                width: 120px;
+                height: 23px;
+                left: 850px;
+                top: 40px;" >
+                    <mat-label>Course Name : </mat-label>
+                    <mat-select name="courseName" formControlName="courseName">
+                      <mat-option  *ngFor="let courseName of courseNames" [value]="courseName" id="courseName">
+                       <a >
+                        {{courseName}}
+                       </a> 
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </li>
+            
+            <li>
+               <button style="position: absolute;
+               width: 151px;
+               height: 60px;
+               left: 1129px;
+               top: 38px;
+               
+               background: #35185A;
+               border-radius: 15px; color:white;">Test Papers</button>
+            </li>
+            <li style="margin-left: 75%;margin-top:3%;"><a routerLink="language"> <img src="/assets/Vector.png" > 
+                <!-- <mat-form-field appearance="fill"> -->
+                    <!-- <mat-label>Language</mat-label> -->
+                    <select matNativeControl >
+                     <option value="english">English</option> 
+                      <option value="hindi">Hindi</option>
+                      <option value="marathi">Marathi</option>
+                    </select>
+                  <!-- </mat-form-field> -->
+            </a></li>
+        </header>
+        <div style="position: absolute;
+        width: 1440px;
+        height: 425px;
+        left: 0px;
+        top: 130px;
+        
+        background: linear-gradient(180deg, #35185A 0%, rgba(53, 24, 90, 0.79) 100%);">
+
+<h3 style="position: absolute;
+width: 811px;
+height: 73px;
+left: 100px;
+top: 80px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 73px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;">Course Name</h3>
+<h4 style="position: absolute;
+width: 1106px;
+height: 36px;
+left: 100px;
+top: 180px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: #FFFFFF;">Course Summary</h4>
+<li ><mat-form-field  style="position: absolute;
+    width: 490px;
+    height: 60px;
+    left: 80px;
+    top: 300px;
+    
+    background:#FFFFFF;
+    border-radius: 15px;">
+    <mat-label>Search </mat-label>
+    <input matInput  />
+    <mat-icon matPrefix>search</mat-icon>
+  </mat-form-field></li>
+        </div>
+        <div style="margin-top: 2353px;">
+            <app-footer></app-footer>
+        </div>

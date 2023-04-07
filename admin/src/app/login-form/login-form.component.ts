@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators,FormControl} from '@angular/forms'
 import { Router } from '@angular/router';
-import { login } from '../dataType';
 import { LoginServiceService } from '../services/login-service.service';
 
 @Component({
@@ -17,7 +16,6 @@ export class LoginFormComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
     private http :HttpClient,
-    private login:LoginServiceService,
     private router:Router
 
      ) {
@@ -34,32 +32,37 @@ export class LoginFormComponent implements OnInit {
 
   // get f() { return this.loginForm.controls; }
 
-  loginFn() {
+  loginFn(loginForm:FormGroup) {
     console.log("login works");
-    
-        // console.log(data);
-        // this.login.onLogin(data).subscribe((result)=>{
-        //   console.log(result);
-      //   if (this.loginForm.invalid) {
-      //     return;
-      // }   
-      // this.http.get<any>("http://localhost:3000/userRegistration")
-      // .subscribe(res=>{
-      //   const user=res.find((a:any)=>{
-      //     return a.email === this.loginForm.value.email &&
-      //      a.password===this.loginForm.value.password
-      //   });
-      
-        if(true){
-          alert("login success");
-          this.loginForm.reset();
-          this.router.navigate(['dashboard'])
-        }
-        else{
-          alert("user not found")
-        }
+    console.log(this.loginForm.value);
+    //added
+    this.http.get<any>("http://localhost:3000/userRegistration")
+    .subscribe(res=>{
+      const user=res.find((a:any)=>{
+        return a.email ===this.loginForm.value.email &&
+         a.password=== this.loginForm.value.password
+      });
+      if(user){
+        alert("You are successfully login");
+        this.loginForm.reset();
+        this.router.navigate(['dashboard'])
       }
+      else{
+        alert("user not found")
+        this.router.navigate(['login'])
+      }
+    } ,err=>{
+      alert('something went wrong')
+    })
   }
-
-    
-   
+}
+        //previous
+      //   if(true){
+      //     alert("login success");
+      //     this.loginForm.reset();
+      //     this.router.navigate(['dashboard'])
+      //   }
+      //   else{
+      //     alert("user not found")
+      //   }
+      // }

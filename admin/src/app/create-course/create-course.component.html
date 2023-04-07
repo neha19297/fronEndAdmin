@@ -1,1 +1,149 @@
-<p>create-course works!</p>
+<header style="display:flex;position: absolute;
+        width: 90rem;
+        height: 8.125rem;
+        left: 0rem;
+        top: 0rem;
+        
+        background: #FFFFFF;">
+            <li>
+                <h3 style="position: absolute;
+                width: 23rem;
+                height: 2.875rem;
+                left: 7.438rem;
+                top: 2rem;
+                color:#2E0A57;"> Global Genius Index (G2I)</h3>
+            </li>
+            <li>
+                <a style="position: absolute;
+                width: 3.375rem;
+                height: 1.438rem;
+                left: 39.438rem;
+                top: 3.375rem;
+                color:#2E0A57;" routerLink=''>Home</a>
+            </li>
+            
+            <li>
+                <h3 style="position: absolute;
+                width: 16rem;
+                height: 1.938rem;
+                left: 70.938rem;
+                top: 2.938rem ;color:#2E0A57">Teacher's Name</h3>
+            </li>
+        </header>
+         <div style="top:20%;"> 
+          <h1>Create Your Course</h1>
+          
+
+        <form [formGroup]="courseForm" #course="ngForm"
+    (ngSubmit)="courseFn(course.value)">
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Course ID:</mat-label>
+        <input matInput formControlName="id" type="text" id="id">
+      </mat-form-field>
+    </div>
+    
+   
+   
+       <div>
+        <mat-form-field appearance="outline" >
+          <mat-label>Course Type :</mat-label>
+          <mat-select name="courseType" formControlName="courseType">
+            <mat-option  *ngFor="let courseType of courseTypes" [value]="courseType" id="courseType">
+             <a >
+              {{courseType}}
+             </a> 
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+       </div>
+        
+       <div>
+        <mat-form-field appearance="outline" >
+          <mat-label>Course Name : </mat-label>
+          <mat-select name="courseName" formControlName="courseName">
+            <mat-option  *ngFor="let courseName of courseNames" [value]="courseName" id="courseName">
+             <a >
+              {{courseName}}
+             </a> 
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+       </div>
+         
+       <div>
+        <mat-form-field appearance="outline" >
+          <mat-label>Class :</mat-label>
+          <mat-select name="class" formControlName="class">
+            <mat-option  *ngFor="let class of classes" [value]="class" id="class">
+             <a >
+              {{class}}
+             </a> 
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+       </div>
+          
+       <div>
+        <mat-form-field appearance="outline" >
+          <mat-label>Course Syllabus : </mat-label>
+          <mat-select name="syllabus" formControlName="syllabus">
+            <mat-option  *ngFor="let syllabus of syllabus" [value]="syllabus" id="syllabus">
+             <a >
+              {{syllabus}}
+             </a> 
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+       </div>
+          
+     <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Name of State Board :</mat-label>
+        <input matInput formControlName="board" type="text" id="board">
+      </mat-form-field>
+     </div>
+     
+<div>
+ <div class="image-container">
+  <mat-label style="position: absolute;
+  width: 308px;
+  height: 35px;
+  left: 711px;
+  top: 590px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #2C0065;">Upload Course Image :</mat-label> <br>
+     <input type="file" (change)="selectFile($event)">  
+<br>
+    <img formControlName="image" [src]="ProfileDP" alt="Profile DP" width="20%" > <br>
+
+
+     <!-- <button (change)="selectFile($event)"><img [src]="ProfileDP" alt="Profile DP" width="20%" ></button> -->
+  </div>
+
+ 
+</div>      
+    
+        
+          <button style="position: absolute;
+          width: 14rem;
+          height: 3.75rem;
+          left: 36.813rem;
+          top: 55.313rem;
+          
+          background: #2E0A57;
+          border-radius: 15px;
+          color:white" type="submit"
+          >Next</button>
+        
+  </form>
+ </div>  

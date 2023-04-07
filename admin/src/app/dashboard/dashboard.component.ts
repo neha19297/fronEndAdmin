@@ -11,12 +11,13 @@ export class DashboardComponent implements OnInit {
   // file: File | null = null; // Variable to store file
   // shortLink: string = "";
   // loading: boolean = false; 
-
+  ProfileDP='';
   fileName = '';  
 
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
+    this.ProfileDP='/assets/Ellipse 197.png';
   }
   onFileSelected(event:any) {  
   
@@ -35,6 +36,21 @@ export class DashboardComponent implements OnInit {
         upload$.subscribe();  
     }  
 }  
+selectFile(event:any) {
+
+  if (event.target.files) {
+  
+  var reader = new FileReader()
+  
+  reader.readAsDataURL(event.target.files[0])
+  
+  reader.onload = (event: any) => {
+  
+  this.ProfileDP= event.target.result
+  
+  }
+}
+}
 }
     
 //   onUpload() {

@@ -76,6 +76,13 @@
       "password": "qwertyuio",
       "cpassword": "qwertyuio",
       "id": 13
+    },
+    {
+      "fname": "Ajay",
+      "email": "ajay123@gmail.com",
+      "password": "ajay@123",
+      "cpassword": "ajay@123",
+      "id": 14
     }
   ],
   "bankDetail": [
@@ -99,6 +106,20 @@
       "ifsc": "",
       "account": 987654321,
       "id": 3
+    },
+    {
+      "bank": "",
+      "name": "vijay",
+      "ifsc": "1234567890",
+      "account": 1234567890,
+      "id": 4
+    },
+    {
+      "bank": "ICICI",
+      "name": "akansha",
+      "ifsc": "0987654321",
+      "account": 987654321,
+      "id": 5
     }
   ],
   "login": [
@@ -233,6 +254,35 @@
     },
     {
       "id": 12
+    }
+  ],
+  "courses": [
+    {
+      "courseType": "",
+      "courseName": "",
+      "class": "",
+      "syllabus": "",
+      "board": "",
+      "image": "",
+      "id": 1
+    },
+    {
+      "courseType": "Arts",
+      "courseName": "Math",
+      "class": "II",
+      "syllabus": "State Board",
+      "board": "MH",
+      "image": "",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "courseType": "Arts",
+      "courseName": "Chemistry",
+      "class": "III",
+      "syllabus": "ICSE",
+      "board": "GJ",
+      "image": ""
     }
   ]
 }

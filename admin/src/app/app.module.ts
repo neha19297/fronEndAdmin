@@ -49,6 +49,8 @@ import { CreateCourseComponent } from './create-course/create-course.component';
 import { VideoComponent } from './video/video.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ElementaryComponent } from './question-bank/elementary/elementary.component';
+import { CourseCardsComponent } from './course-cards/course-cards.component';
+import { SubmitQueComponent } from './submit-que/submit-que.component';
 
 // import {MatSnackBar} from '@angular/material/snack-bar';
 @NgModule({
@@ -77,6 +79,8 @@ import { ElementaryComponent } from './question-bank/elementary/elementary.compo
     CreateCourseComponent,
     PaymentComponent,
     ElementaryComponent,
+    CourseCardsComponent,
+    SubmitQueComponent,
      
     
   ],
