@@ -33,7 +33,7 @@ body {
 }
 
 form {
-  margin-left: 45rem;
+  margin-left: 50rem;
   padding-top: 5%;
   // @include tablet{
   //   font-size: larger;
@@ -116,7 +116,15 @@ div {
   // width:50%;
 //    height: 100%;
    background-image: $background_1;
+
   //  background:$bgcolor ;
+  img{
+//     position: absolute;
+// width: 844.25px;
+// height: 1225.1px;
+// left: -54px;
+// top: -65px;
+  }
   h1 {
     position: $positionAbsolute;
     width: 25.313rem;
@@ -141,5 +149,21 @@ padding-top: 8%;
 li {
   display: inline;
   padding-left: 3%;
+}
+.heading{
+  position: absolute;
+  width: 720px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  
+  background: linear-gradient(180deg, #35185A 0%, #4A227C 100%);
+}
+.logo{
+  position: absolute;
+left: 6.25%;
+right: 81.46%;
+top: 2.25%;
+bottom: 79.98%;
 }
 @import '~bootstrap/scss/bootstrap';
