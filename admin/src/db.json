@@ -83,6 +83,13 @@
       "password": "ajay@123",
       "cpassword": "ajay@123",
       "id": 14
+    },
+    {
+      "fname": "sneha",
+      "email": "neha098@gmail.com",
+      "password": "neha@098",
+      "cpassword": "neha@098",
+      "id": 15
     }
   ],
   "bankDetail": [
@@ -282,6 +289,15 @@
       "class": "III",
       "syllabus": "ICSE",
       "board": "GJ",
+      "image": ""
+    },
+    {
+      "id": "asd",
+      "courseType": "Arts",
+      "courseName": "Chemistry",
+      "class": "V",
+      "syllabus": "ICSE",
+      "board": "MH",
       "image": ""
     }
   ]
