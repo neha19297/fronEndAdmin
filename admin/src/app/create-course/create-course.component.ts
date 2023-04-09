@@ -38,7 +38,7 @@ export class CreateCourseComponent implements OnInit {
   .subscribe((result=>{
         console.log(result);
         if (result){
-          this.router.navigate(['courseCard'])
+          this.router.navigate(['courseChapter'])
         }
         
       }))

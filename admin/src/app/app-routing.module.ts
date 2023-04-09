@@ -24,6 +24,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { ElementaryComponent } from './question-bank/elementary/elementary.component';
 import { CourseCardsComponent } from './course-cards/course-cards.component';
 import { SubmitQueComponent } from './submit-que/submit-que.component';
+import { CourseChapterComponent } from './course-chapter/course-chapter.component';
 
 
 
@@ -121,6 +122,10 @@ const routes: Routes = [
  {
   path:'courseCard',
   component:CourseCardsComponent
+ },
+ {
+  path:'courseChapter',
+  component:CourseChapterComponent
  },
  {
   path:'submitQue',

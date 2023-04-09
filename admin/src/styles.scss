@@ -160,4 +160,37 @@ right: 81.46%;
 top: 2.25%;
 bottom: 79.98%;
 }
+.common_header{
+  display:flex;position: absolute;
+        width: 90rem;
+        height: 8.125rem;
+        left: 0rem;
+        top: 0rem;
+        
+        background: #FFFFFF;
+        
+          h3{
+            position: absolute;
+                width: 23rem;
+                height: 2.875rem;
+                left: 7.438rem;
+                top: 2rem;
+                color:#2E0A57;
+          }
+        a{
+          position: absolute;
+                width: 3.375rem;
+                height: 1.438rem;
+                left: 39.438rem;
+                top: 3.375rem;
+                color:#2E0A57;
+        }
+        h2{
+          position: absolute;
+                width: 16rem;
+                height: 1.938rem;
+                left: 68.938rem;
+                top: 2.938rem ;color:#2E0A57
+        }
+}
 @import '~bootstrap/scss/bootstrap';

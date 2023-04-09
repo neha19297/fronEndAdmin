@@ -1,0 +1,85 @@
+<header class="common_header">
+            <li>
+                <h3> Global Genius Index (G2I)</h3>
+            </li>
+            <li>
+                <a routerLink=''>Home</a>
+            </li>
+            
+            <li>
+                <h2>Teacher's Name</h2>
+            </li>
+        </header>
+         <div style="top:20%;"> 
+          
+
+        <form [formGroup]="courseForm" #course="ngForm"
+    (ngSubmit)="courseFn(course.value)">
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Course ID:</mat-label>
+        <input matInput formControlName="course_id" type="text" id="id">
+      </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Chapter ID:</mat-label>
+          <input matInput formControlName="chapter_id" type="text" id="id">
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Chapter Name</mat-label>
+          <input matInput formControlName="chapterName" type="text" id="id">
+        </mat-form-field>
+      </div>
+   
+   
+     
+        
+       <div>
+        <mat-form-field appearance="outline" >
+          <mat-label>Chapter Content : </mat-label>
+          <mat-select name="content" formControlName="chapterContent">
+            <mat-option  *ngFor="let content of contents" [value]="content" id="content">
+             <a >
+              {{content}}
+             </a> 
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+       </div>
+          
+     <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Course Duration :</mat-label>
+        <input matInput formControlName="duration" type="text" id="duration">
+      </mat-form-field>
+     </div>
+     
+<!-- <div>
+ <div class="image-container">
+  <mat-label>PDF :</mat-label> <br>
+     <input type="file" (change)="selectFile($event)">  
+<br>
+    <img formControlName="image" [src]="ProfileDP" alt="Profile DP" width="20%" > <br>
+
+
+  </div> -->
+
+ 
+    
+        
+          <button style="position: absolute;
+          width: 14rem;
+          height: 3.75rem;
+          left: 36.813rem;
+          top: 55.313rem;
+          
+          background: #2E0A57;
+          border-radius: 15px;
+          color:white" type="submit"
+          >Next</button>
+        
+  </form>
+</div>

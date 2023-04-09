@@ -51,6 +51,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { ElementaryComponent } from './question-bank/elementary/elementary.component';
 import { CourseCardsComponent } from './course-cards/course-cards.component';
 import { SubmitQueComponent } from './submit-que/submit-que.component';
+import { CourseChapterComponent } from './course-chapter/course-chapter.component';
 
 // import {MatSnackBar} from '@angular/material/snack-bar';
 @NgModule({
@@ -81,6 +82,7 @@ import { SubmitQueComponent } from './submit-que/submit-que.component';
     ElementaryComponent,
     CourseCardsComponent,
     SubmitQueComponent,
+    CourseChapterComponent,
      
     
   ],
