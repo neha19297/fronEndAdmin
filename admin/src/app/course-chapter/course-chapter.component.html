@@ -57,29 +57,39 @@
       </mat-form-field>
      </div>
      
-<!-- <div>
- <div class="image-container">
-  <mat-label>PDF :</mat-label> <br>
-     <input type="file" (change)="selectFile($event)">  
-<br>
-    <img formControlName="image" [src]="ProfileDP" alt="Profile DP" width="20%" > <br>
+     <input type="file" class="file-input"  
+     (change)="onFileSelected($event)" #fileUpload>  
+ 
+ <div class="file-upload">  
+ 
+ {{fileName || "No file uploaded yet."}}  
+ 
+  <a  
+    (click)="fileUpload.click()">  
+      <!-- <mat-icon>attach_file</mat-icon>  -->
+      <img src="/assets/pdf.png" >
+  </a>  
 
+ </div> 
 
-  </div> -->
+ <input type="file" class="file-input"  
+ (change)="onVideoSelected($event)" #fileUpload>  
+
+<div class="file-upload">  
+
+{{fileName}}  
+
+<a  
+(click)="fileUpload.click()">  
+  <!-- <mat-icon>attach_file</mat-icon>  -->
+  <img src="/assets/video.png" >
+</a>  
+</div> 
 
  
-    
+    <button style="left:303px">Preview Content</button>
         
-          <button style="position: absolute;
-          width: 14rem;
-          height: 3.75rem;
-          left: 36.813rem;
-          top: 55.313rem;
-          
-          background: #2E0A57;
-          border-radius: 15px;
-          color:white" type="submit"
-          >Next</button>
+          <button style="left:813px">Create Content</button>
         
   </form>
 </div>

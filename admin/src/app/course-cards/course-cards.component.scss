@@ -1,0 +1,117 @@
+@import '../../styles.scss';
+header{
+    display:flex;position: absolute;
+        width: 90rem;
+        height: 8.125rem;
+        left: 0rem;
+        top: 0rem;
+        
+        background: #FFFFFF;
+        h3{
+            position: absolute;
+                width: 23rem;
+                height: 2.875rem;
+                left:3.5rem;
+                top: 2rem;
+                color:#2E0A57;
+        }
+        .search{
+            box-sizing: border-box;
+
+                position: absolute;
+                width: 20.875rem;
+                height: 4.125rem;
+                left: 19.75rem;
+                top: 1.5rem;
+                
+                border: 0.063rem solid #000000;
+                border-radius: 1.875rem;
+        }
+        .home{
+            position: absolute;
+                width: 3.375rem;
+                height: 1.438rem;
+                left: 46.875rem;
+top: 3.375rem;
+                color:#2E0A57;
+        }
+        .courseName{
+            position: absolute;
+                width: 7.5rem;
+                height: 1.438rem;
+                left: 53.125rem;
+            
+                top: 2.5rem;
+        }
+        button{
+            position: absolute;
+               width: 151px;
+               height: 60px;
+               left: 1060px;
+               top: 38px;
+               
+               background: #35185A;
+               border-radius: 15px; color:white;
+        }
+}
+.container{
+    position: absolute;
+        width: 90rem;
+        height: 425px;
+        left: 0rem;
+        top: 130px;
+        
+        background: linear-gradient(180deg, #35185A 0%, rgba(53, 24, 90, 0.79) 100%);
+        h3{
+            position: absolute;
+width: 811px;
+height: 73px;
+left: 100px;
+top: 80px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 73px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+        }
+h4{
+    position: absolute;
+width: 1106px;
+height: 36px;
+left: 100px;
+top: 180px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+color: #FFFFFF;
+
+}
+mat-form-field{
+    position: absolute;
+    width: 490px;
+    height: 60px;
+    left: 80px;
+    top: 18.75rem;
+    
+    background:#FFFFFF;
+    border-radius: 15px;
+}
+        }
+mat-card{
+    position: absolute;
+        width: 378px;
+        height: 446px;
+        left: 123px;
+        top: 600px;
+        
+        background: #F6F6F6;
+        border-radius: 15px;
+}
