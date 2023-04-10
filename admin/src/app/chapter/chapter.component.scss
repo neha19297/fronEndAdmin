@@ -1,1 +1,28 @@
 @import '../../styles.scss';
+img{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+h2{
+    position: absolute;
+    width: 7rem;
+    height: 1.938rem;
+    left: 19.188rem;
+    top: 9.375rem;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.375rem;
+    display: flex;
+    align-items: center;
+    
+    color: #2C0065;
+}
+.content{
+    top: 18.75rem;
+position: absolute;
+left: 18.75rem;
+}

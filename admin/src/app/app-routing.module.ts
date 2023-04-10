@@ -27,6 +27,7 @@ import { SubmitQueComponent } from './submit-que/submit-que.component';
 import { CourseChapterComponent } from './course-chapter/course-chapter.component';
 import { TeachersProfileComponent } from './teachers-profile/teachers-profile.component';
 import { ChapterComponent } from './chapter/chapter.component';
+import { CourseOverviewComponent } from './course-overview/course-overview.component';
 
 
 
@@ -140,6 +141,10 @@ const routes: Routes = [
  {
   path:'chapter',
   component:ChapterComponent
+ },
+ {
+  path:'courseOverview',
+  component:CourseOverviewComponent
  },
 ];
 

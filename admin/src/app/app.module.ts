@@ -55,6 +55,7 @@ import { CourseChapterComponent } from './course-chapter/course-chapter.componen
 import { TeachersProfileComponent } from './teachers-profile/teachers-profile.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { ChapterComponent } from './chapter/chapter.component';
+import { CourseOverviewComponent } from './course-overview/course-overview.component';
 // import {MatSnackBar} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
@@ -87,6 +88,7 @@ import { ChapterComponent } from './chapter/chapter.component';
     CourseChapterComponent,
     TeachersProfileComponent,
     ChapterComponent,
+    CourseOverviewComponent,
      
     
   ],
