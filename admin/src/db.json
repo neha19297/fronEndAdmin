@@ -300,5 +300,23 @@
       "board": "MH",
       "image": ""
     }
+  ],
+  "courseChapter": [
+    {
+      "course_id": "123",
+      "chapter_id": "123456",
+      "chapterName": "modulation",
+      "chapterContent": "c",
+      "duration": "2",
+      "id": 1
+    },
+    {
+      "course_id": "",
+      "chapter_id": "",
+      "chapterName": "",
+      "chapterContent": "",
+      "duration": "",
+      "id": 2
+    }
   ]
 }

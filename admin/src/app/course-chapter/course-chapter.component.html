@@ -56,35 +56,42 @@
         <input matInput formControlName="duration" type="text" id="duration">
       </mat-form-field>
      </div>
+     <div style="display:flex">
+      <div>
+        <input type="file" class="file-input"  
+        (change)="onFileSelected($event)" #fileUpload>  
+    
+    <div class="file-upload">  
+    
+    <!-- {{fileName || "No file uploaded yet."}}   -->
+    
+     <a  
+       (click)="fileUpload.click()">  
+         <!-- <mat-icon>attach_file</mat-icon>  -->
+         <img src="/assets/pdf.png" >
+     </a>  
+   
+    </div> 
+       </div>
+       
+  <div>
+    <input type="file" class="file-input"  
+    (change)="onVideoSelected($event)" #fileUpload>  
+   
+   <div class="file-upload">  
+   
+   {{fileName}}  
+   
+   <a  
+   (click)="fileUpload.click()">  
+     <!-- <mat-icon>attach_file</mat-icon>  -->
+     <img src="/assets/video.png" >
+   </a>  
+   </div> 
+  </div>
+   
+     </div>
      
-     <input type="file" class="file-input"  
-     (change)="onFileSelected($event)" #fileUpload>  
- 
- <div class="file-upload">  
- 
- {{fileName || "No file uploaded yet."}}  
- 
-  <a  
-    (click)="fileUpload.click()">  
-      <!-- <mat-icon>attach_file</mat-icon>  -->
-      <img src="/assets/pdf.png" >
-  </a>  
-
- </div> 
-
- <input type="file" class="file-input"  
- (change)="onVideoSelected($event)" #fileUpload>  
-
-<div class="file-upload">  
-
-{{fileName}}  
-
-<a  
-(click)="fileUpload.click()">  
-  <!-- <mat-icon>attach_file</mat-icon>  -->
-  <img src="/assets/video.png" >
-</a>  
-</div> 
 
  
     <button style="left:303px">Preview Content</button>

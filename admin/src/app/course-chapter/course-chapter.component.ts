@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ChapterServiceService } from '../services/chapter-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-course-chapter',
@@ -19,13 +21,21 @@ export class CourseChapterComponent implements OnInit {
     duration:new FormControl("", [Validators.required]),
    
   })
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private chapterService :ChapterServiceService,private route:Router) { }
   fileName = '';  
 videoName='';
   ngOnInit(): void {
   }
   courseFn(data:any){
     console.log(this.courseForm);
+    this.chapterService.chapterService(data)
+    .subscribe((result)=>{
+      console.log(result)
+      if(result){
+this.route.navigate(['courseCard'])
+      };
+      
+    });
     
   }
   onFileSelected(event:any) {  
