@@ -44,6 +44,14 @@ mat-sidenav {
 mat-sidenav-container {
     height: calc(100vh - 65px);
     margin-top:5%;
+    
+
+//     position: absolute;
+// width: 403px;
+// height: 1095px;
+// left: 0px;
+// top: 131px;
+
 }
 mat-toolbar {
     background-color: white;
@@ -51,13 +59,32 @@ mat-toolbar {
 
 mat-sidenav {
     margin: 1rem;
-    width: 12.5rem;
+    width:403px;
     border-right: none;
     background: rgba(196, 158, 245, 0.69);
     color: white;
     border-radius: 0.625rem;
     padding: 1rem;
     text-align: center;
+    a{
+        position: absolute;
+width: 218px;
+height: 38px;
+left: 91px;
+// top: 332px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+display: flex;
+// align-items: center;
+margin-top:20%;
+color: #2C0065;
+    }
 }
 
 .content {

@@ -1,0 +1,33 @@
+@import '../../styles.scss';
+.qr_container{
+    position: absolute;
+width: 497px;
+height: 431px;
+left: 779px;
+top: 394px;
+
+background: #D9D9D9;
+}
+.welcom{
+    position: absolute;
+    width: 521px;
+    height: 46px;
+    left: 770px;
+    top: 105px; 
+    color:#230041;
+}
+h3{
+    position: absolute;
+width: 352px;
+height: 46px;
+left: 848px;
+top: 203px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 42px;
+
+color: #230041;
+}

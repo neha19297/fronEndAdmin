@@ -25,6 +25,7 @@ import { ElementaryComponent } from './question-bank/elementary/elementary.compo
 import { CourseCardsComponent } from './course-cards/course-cards.component';
 import { SubmitQueComponent } from './submit-que/submit-que.component';
 import { CourseChapterComponent } from './course-chapter/course-chapter.component';
+import { TeachersProfileComponent } from './teachers-profile/teachers-profile.component';
 
 
 
@@ -130,6 +131,10 @@ const routes: Routes = [
  {
   path:'submitQue',
   component:SubmitQueComponent
+ },
+ {
+  path:'teachersProfile',
+  component:TeachersProfileComponent
  },
 ];
 

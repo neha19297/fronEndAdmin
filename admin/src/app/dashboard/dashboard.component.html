@@ -1,37 +1,30 @@
 <div>
     <div>
-      <header style="display:flex;position: absolute;
-        width: 90rem;
-        height: 8.125rem;
-        left: 0rem;
-        top: 0rem;
+      <header >
+        <li>
+            <h3> Global Genius Index <br>(G2I)</h3>
+        </li>
+        <li>
+            <a class="home" routerLink=''>Home</a>
+        </li>
+        <li> <h6 class="name">Teacher's Name</h6></li>
         
-        background: #FFFFFF;">
-            <li>
-                <h3 style="position: absolute;
-                width: 23rem;
-                height: 2.875rem;
-                left: 7.438rem;
-                top: 2rem;
-                color:#2E0A57;"> Global Genius Index (G2I)</h3>
-            </li>
-            <li>
-                <a style="position: absolute;
-                width: 3.375rem;
-                height: 1.438rem;
-                left: 39.438rem;
-                top: 3.375rem;
-                color:#2E0A57;" routerLink=''>Home</a>
-            </li>
-            
-            <li>
-                <h3 style="position: absolute;
-                width: 16rem;
-                height: 1.938rem;
-                left: 70.938rem;
-                top: 2.938rem ;color:#2E0A57">Teacher's Name</h3>
-            </li>
-        </header>
+        <li>
+           <button routerLink="/myProfile">My Profile</button>
+        </li>
+        <li style="margin-left: 70%;margin-top: 3%;"><a routerLink="language"> <img src="/assets/Vector.png" > 
+            <!-- <mat-form-field appearance="fill"> -->
+              <br>
+
+              <!-- <mat-label>Language</mat-label> -->
+                <select matNativeControl >
+                  <option value="english">English</option> 
+                  <option value="hindi">Hindi</option>
+                  <option value="marathi">Marathi</option>
+                </select>
+              <!-- </mat-form-field> -->
+        </a></li>
+    </header>
     </div>
     <div style="position: absolute;
     width: 90rem;
@@ -41,7 +34,7 @@
     
     background: #35185A;" >
     <h3 class="heading" style="color:white">Experience Your Teaching Ability</h3>
-<h5 class="sub-heading" style="color:white">Experience Your Teaching Ability Become an instructor and change lives — including your own</h5>
+<h5 class="sub-heading" style="color:white">Become an instructor and change lives — including your own</h5>
     <button style="position: absolute;
     width: 14.938rem;
     height: 5.938rem;

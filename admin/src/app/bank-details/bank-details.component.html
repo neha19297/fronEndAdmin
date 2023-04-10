@@ -1,14 +1,15 @@
 <div class="heading">
   <img class="logo" src="/assets/Color logo with background 1.png">
 
-  <h1>Bank Details</h1>
+  <h1>Bank Details Or Scan QR Code</h1>
 
 </div>
 
 <div>
     <form [formGroup]="bankForm" #bank="ngForm"
     (ngSubmit)="bankFn(bank.value)">
-   
+    <h2>   Welcome to Global Genius Index(G2I)
+    </h2>
       <div>
             <mat-form-field appearance="outline" >
                 <mat-label>Banks</mat-label>
@@ -80,7 +81,8 @@
              
             </div>  -->
             <div>
-              <button>SUBMIT</button>
+              <button class="button_submit">Link Account</button><br>
+              <button style="top: 841px;" routerLink="/payment">Skip</button>
       
             </div>
 

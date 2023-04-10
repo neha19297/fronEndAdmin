@@ -10,17 +10,33 @@
                 <h2>Teacher's Name</h2>
             </li>
         </header>
-         <div style="top:20%;"> 
-          <h1 style="color:black;">Create Your Course</h1>
+         <div style="top:20%;" class="course_heading"> 
+          <h3>Create Your Course</h3>
           
 
         <form [formGroup]="courseForm" #course="ngForm"
     (ngSubmit)="courseFn(course.value)">
-    <div>
-      <mat-form-field appearance="outline">
-        <mat-label>Course ID:</mat-label>
-        <input matInput formControlName="id" type="text" id="id">
-      </mat-form-field>
+    <div style="box-sizing: border-box;
+
+    position: absolute;
+    width: 323px;
+    height: 86px;
+    left: 542px;
+    top: -90px;
+    
+    border: 3px solid #2C0065;
+    border-radius: 20px;">
+      <!-- <mat-form-field appearance="outline"> -->
+        <mat-label style="font-weight: 600;
+        font-size: 30px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin:5%;
+        color: #2C0065;">Course ID: 1234</mat-label>
+        <!-- <input matInput formControlName="id" type="text" id="id"> -->
+      <!-- </mat-form-field> -->
     </div>
     
    
@@ -90,7 +106,7 @@
   width: 308px;
   height: 35px;
   left: 790px;
-  top: 620px;
+  top: 450px;
   
   font-family: 'Roboto';
   font-style: normal;

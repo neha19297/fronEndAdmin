@@ -1,0 +1,58 @@
+<header class="common_header">
+    <li>
+        <h3> Global Genius Index (G2I)</h3>
+    </li>
+    <li>
+        <a routerLink=''>Home</a>
+    </li>
+    
+    <li>
+        <h2>Personal Details</h2>
+    </li>
+</header>
+<form  #profile="ngForm" (ngSubmit)="profileFn(profileForm)"
+      name="profileForm" [formGroup]="profileForm">
+        
+       <div>
+        <mat-form-field appearance="outline"> 
+          <mat-label>First Name</mat-label>
+            <input formControlName="fname" matInput />
+        </mat-form-field>
+       </div>
+       <div>
+        <mat-form-field appearance="outline"> 
+          <mat-label>Last Name</mat-label>
+            <input formControlName="lname" matInput />
+        </mat-form-field>
+       </div>
+       <div>
+        <mat-form-field appearance="outline"> 
+          <mat-label>Email ID</mat-label>
+            <input formControlName="email" matInput />
+        </mat-form-field>
+       </div>
+       <div>
+        <mat-form-field appearance="outline"> 
+          <mat-label>Subject</mat-label>
+            <input formControlName="subject" matInput />
+        </mat-form-field>
+       </div>
+       <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Subscription start date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="startDate">
+            <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+       </div>
+       <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Subscription end date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="endDate">
+            <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+       </div>
+</form>

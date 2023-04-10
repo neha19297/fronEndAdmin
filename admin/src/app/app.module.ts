@@ -52,7 +52,8 @@ import { ElementaryComponent } from './question-bank/elementary/elementary.compo
 import { CourseCardsComponent } from './course-cards/course-cards.component';
 import { SubmitQueComponent } from './submit-que/submit-que.component';
 import { CourseChapterComponent } from './course-chapter/course-chapter.component';
-
+import { TeachersProfileComponent } from './teachers-profile/teachers-profile.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 // import {MatSnackBar} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { CourseChapterComponent } from './course-chapter/course-chapter.componen
     CourseCardsComponent,
     SubmitQueComponent,
     CourseChapterComponent,
+    TeachersProfileComponent,
      
     
   ],
@@ -111,7 +113,8 @@ MatGridListModule,
     MatSidenavModule,
     MatDividerModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDatepickerModule
     // FlexLayoutModule,
   ],
   providers: [UserRegisterServiceService],

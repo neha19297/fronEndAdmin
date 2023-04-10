@@ -1,6 +1,10 @@
 @import '../../styles.scss';
 
-.button{
+button{
     background-color: $buttonBack;
     border: radius 0.125rem;
+     margin-top: 5%;
+     border-radius: 15px;
+     width: 490px;
+     height: 60px;
 }
