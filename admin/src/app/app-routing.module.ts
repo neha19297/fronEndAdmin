@@ -26,6 +26,7 @@ import { CourseCardsComponent } from './course-cards/course-cards.component';
 import { SubmitQueComponent } from './submit-que/submit-que.component';
 import { CourseChapterComponent } from './course-chapter/course-chapter.component';
 import { TeachersProfileComponent } from './teachers-profile/teachers-profile.component';
+import { ChapterComponent } from './chapter/chapter.component';
 
 
 
@@ -135,6 +136,10 @@ const routes: Routes = [
  {
   path:'teachersProfile',
   component:TeachersProfileComponent
+ },
+ {
+  path:'chapter',
+  component:ChapterComponent
  },
 ];
 

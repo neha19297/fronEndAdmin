@@ -54,6 +54,7 @@ import { SubmitQueComponent } from './submit-que/submit-que.component';
 import { CourseChapterComponent } from './course-chapter/course-chapter.component';
 import { TeachersProfileComponent } from './teachers-profile/teachers-profile.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { ChapterComponent } from './chapter/chapter.component';
 // import {MatSnackBar} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
@@ -85,6 +86,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     SubmitQueComponent,
     CourseChapterComponent,
     TeachersProfileComponent,
+    ChapterComponent,
      
     
   ],
