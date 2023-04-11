@@ -16,25 +16,9 @@
 
         <form [formGroup]="courseForm" #course="ngForm"
     (ngSubmit)="courseFn(course.value)">
-    <div style="box-sizing: border-box;
-
-    position: absolute;
-    width: 323px;
-    height: 86px;
-    left: 542px;
-    top: -90px;
-    
-    border: 3px solid #2C0065;
-    border-radius: 20px;">
+    <div class="container">
       <!-- <mat-form-field appearance="outline"> -->
-        <mat-label style="font-weight: 600;
-        font-size: 30px;
-        line-height: 35px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin:5%;
-        color: #2C0065;">Course ID: 1234</mat-label>
+        <mat-label class="courseId">Course ID: 1234</mat-label>
         <!-- <input matInput formControlName="id" type="text" id="id"> -->
       <!-- </mat-form-field> -->
     </div>
@@ -102,22 +86,7 @@
      
 <div>
  <div class="image-container">
-  <mat-label style="position: absolute;
-  width: 308px;
-  height: 35px;
-  left: 790px;
-  top: 450px;
-  
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 35px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  
-  color: #2C0065;">Upload Course Image :</mat-label> <br>
+  <mat-label class="img_label">Upload Course Image :</mat-label> <br>
      <input type="file" (change)="selectFile($event)">  
 <br>
     <img formControlName="image" [src]="ProfileDP" alt="Profile DP" width="20%" > <br>

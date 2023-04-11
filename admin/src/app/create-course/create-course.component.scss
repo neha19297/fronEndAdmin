@@ -3,25 +3,24 @@
     box-sizing: border-box;
 
 position: absolute;
-width: 506px;
-height: 393px;
-left: 96px;
-top: 525px;
+width: 31.625rem;
+height: 24.563rem;
+left: 6rem;
+top: 32.813rem;
 
-border: 3px solid #290854;
-border-radius: 30px;
+border: 0.188rem solid #290854;
+border-radius: 1.875rem;
 h3{
     position: absolute;
-width: 288px;
-height: 240px;
-left: 90px;
-top: 90px;
-
+width: 18rem;
+height: 15rem;
+left: 5.625rem;
+top: 5.625rem;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 800;
-font-size: 48px;
-line-height: 56px;
+font-size: 3rem;
+line-height: 3.5rem;
 display: flex;
 align-items: center;
 text-align: center;
@@ -29,4 +28,44 @@ text-align: center;
 color: #2C0065;
 
 }
+}
+.container{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 20.188rem;
+    height: 5.375rem;
+    left: 33.875rem;
+    top: -5.625rem;
+    
+    border: 0.188rem solid #2C0065;
+    border-radius: 1.25rem;
+}
+.courseId{
+    font-weight: 600;
+        font-size: 1.875rem;
+        line-height:  2.188rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin:5%;
+        color: #2C0065;
+}
+.img_label{
+    position: absolute;
+  width: 19.25rem;
+  height: 2.188rem;
+  left: 49.375rem;
+  top: 28.125rem;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 2.188rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #2C0065;
 }

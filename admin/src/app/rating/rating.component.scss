@@ -1,1 +1,25 @@
 @import '../../styles.scss';
+.rating{
+    box-sizing: border-box;
+
+ position: absolute;
+ width: 52.188rem;
+ height: 22.625rem;
+ left: 13.313rem;
+ top: 12.375rem;
+ 
+ border: 0.375rem solid #2E0A57;
+ border-radius: 1.875rem;
+}
+.awards{
+    box-sizing: border-box;
+
+   position: absolute;
+   width: 52.188rem;
+   height: 22.625rem;
+   left: 32.688rem;
+   top: 37.563rem;
+   
+   border: 0.375rem solid #2E0A57;
+   border-radius: 1.875rem;
+}

@@ -1,5 +1,5 @@
 export interface userRegistration{
-    fname: string;
+    firstName: string;
     // lname: string;
     // mobile: number;
     id:number;

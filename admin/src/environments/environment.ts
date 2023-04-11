@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  registration_api: 'http://localhost:3000/userRegistration',
+  registration_api: 'http://13.233.223.217:2020/users/registration',
   bank_details_api:'http://localhost:3000/bankDetail',
   login_api: 'http://localhost:3000/login',
    que_api:'http://localhost:3000/question_upload'
