@@ -1,1 +1,29 @@
 @import '../../styles.scss';
+mat-label{
+    position: absolute;
+width: 175px;
+height: 31px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+display: flex;
+align-items: center;
+
+color: #2C0065;
+
+}
+button{
+    position: absolute;
+width: 224px;
+height: 60px;
+left: 631px;
+top: 794px;
+
+background: #2E0A57;
+border-radius: 15px;
+color:white;
+}

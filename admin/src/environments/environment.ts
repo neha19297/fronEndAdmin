@@ -7,7 +7,10 @@ export const environment = {
   registration_api: 'http://13.233.223.217:2020/users/registration',
   bank_details_api:'http://localhost:3000/bankDetail',
   login_api: 'http://localhost:3000/login',
-   que_api:'http://localhost:3000/question_upload'
+   que_api:'http://localhost:3000/question_upload',
+   course_chapter_api:"http://localhost:3000/courseChapter",
+   course_api:'http://localhost:3000/courses',
+   file_upload_api:'http://localhost:3000/uploadFile'
 };
 
 

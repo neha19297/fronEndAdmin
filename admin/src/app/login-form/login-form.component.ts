@@ -36,7 +36,7 @@ export class LoginFormComponent implements OnInit {
     console.log("login works");
     console.log(this.loginForm.value);
     //added
-    this.http.get<any>("http://localhost:3000/userRegistration")
+    this.http.get<any>("http://13.233.223.217:2020/users/registration")
     .subscribe(res=>{
       const user=res.find((a:any)=>{
         return a.email ===this.loginForm.value.email &&

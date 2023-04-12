@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
+import { environment } from 'src/environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class FileUploadService {
     
   // API url
-  baseApiUrl = "http://localhost:3000/uploadFile"
+  baseApiUrl =environment.file_upload_api;
     
   constructor(private http:HttpClient) { }
   

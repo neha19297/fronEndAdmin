@@ -12,7 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { BankDetailsComponent } from './bank-details/bank-details.component';
-import {MatIconModule, MatOptionModule} from '@angular/material';
+import {MatIconModule, MatNativeDateModule, MatOptionModule} from '@angular/material';
 import { MatSelectModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import {MatRadioModule} from '@angular/material/radio';
@@ -118,10 +118,11 @@ MatGridListModule,
     MatDividerModule,
     MatListModule,
     MatMenuModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatNativeDateModule 
     // FlexLayoutModule,
   ],
-  providers: [UserRegisterServiceService],
+  providers: [UserRegisterServiceService,MatDatepickerModule ],
   bootstrap: [AppComponent]
   // schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
