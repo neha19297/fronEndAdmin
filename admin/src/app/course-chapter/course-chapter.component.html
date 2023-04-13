@@ -16,7 +16,8 @@
         <form [formGroup]="courseForm" #course="ngForm"
     (ngSubmit)="courseFn(course.value)">
     <div>
-      <mat-form-field appearance="outline">
+      <mat-form-field appearance="outline" style="left: -80%;
+      top: 90px;">
         <mat-label>Course ID:</mat-label>
         <input matInput formControlName="course_id" type="text" id="id">
       </mat-form-field>
@@ -28,7 +29,7 @@
         </mat-form-field>
       </div>
       <div>
-        <mat-form-field appearance="outline">
+        <mat-form-field appearance="outline" style="width: 698.16px;left: -80%;">
           <mat-label>Chapter Name</mat-label>
           <input matInput formControlName="chapterName" type="text" id="id">
         </mat-form-field>
@@ -38,7 +39,7 @@
      
         
        <div>
-        <mat-form-field appearance="outline" >
+        <mat-form-field appearance="outline" style="width: 698.16px;left: -80%;">
           <mat-label>Chapter Content : </mat-label>
           <mat-select name="content" formControlName="chapterContent">
             <mat-option  *ngFor="let content of contents" [value]="content" id="content">
@@ -51,12 +52,12 @@
        </div>
           
      <div>
-      <mat-form-field appearance="outline">
+      <mat-form-field appearance="outline" style="left: -80%;">
         <mat-label>Course Duration :</mat-label>
         <input matInput formControlName="duration" type="text" id="duration">
       </mat-form-field>
      </div>
-     <div style="display:flex">
+     <div style="display:flex;left:-80%;">
       <div>
         <input type="file" class="file-input"  
         (change)="onFileSelected($event)" #fileUpload>  

@@ -22,8 +22,8 @@ export class CreateCourseComponent implements OnInit {
     courseName:new FormControl("", [Validators.required]),
     class:new FormControl("", [Validators.required]),
     syllabus:new FormControl("", [Validators.required]),
-    board:new FormControl("", [Validators.required]),
-    image: new FormControl("", []),
+    board:new FormControl("", [Validators.required])
+    // image: new FormControl("", []),
   })
   constructor(private courseService: CourseServiceService,
     private router:Router) { }

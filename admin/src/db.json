@@ -299,6 +299,15 @@
       "syllabus": "ICSE",
       "board": "MH",
       "image": ""
+    },
+    {
+      "id": 4,
+      "courseType": "",
+      "courseName": "",
+      "class": "",
+      "syllabus": "",
+      "board": "",
+      "image": ""
     }
   ],
   "courseChapter": [
@@ -317,6 +326,14 @@
       "chapterContent": "",
       "duration": "",
       "id": 2
+    },
+    {
+      "course_id": "123456",
+      "chapter_id": "12345",
+      "chapterName": "integration",
+      "chapterContent": "b",
+      "duration": "6",
+      "id": 3
     }
   ]
 }

@@ -89,7 +89,7 @@
   <mat-label class="img_label">Upload Course Image :</mat-label> <br>
      <input type="file" (change)="selectFile($event)">  
 <br>
-    <img formControlName="image" [src]="ProfileDP" alt="Profile DP" width="20%" > <br>
+    <img [src]="ProfileDP" alt="Profile DP" width="20%" > <br>
 
 
      <!-- <button (change)="selectFile($event)"><img [src]="ProfileDP" alt="Profile DP" width="20%" ></button> -->
@@ -103,7 +103,7 @@
           width: 14rem;
           height: 3.75rem;
           left: 36.813rem;
-          top: 55.313rem;
+          top: 40.313rem;
           
           background: #2E0A57;
           border-radius: 0.938rem;
