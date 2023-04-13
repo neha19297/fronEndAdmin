@@ -57,6 +57,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { ChapterComponent } from './chapter/chapter.component';
 import { CourseOverviewComponent } from './course-overview/course-overview.component';
 import { DashboardSidenavComponent } from './dashboard/dashboard-sidenav/dashboard-sidenav.component';
+import { SubjectComponent } from './subject/subject.component';
 // import {MatSnackBar} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
@@ -91,6 +92,7 @@ import { DashboardSidenavComponent } from './dashboard/dashboard-sidenav/dashboa
     ChapterComponent,
     CourseOverviewComponent,
     DashboardSidenavComponent,
+    SubjectComponent,
      
     
   ],

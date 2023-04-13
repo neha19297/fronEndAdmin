@@ -28,6 +28,7 @@ import { CourseChapterComponent } from './course-chapter/course-chapter.componen
 import { TeachersProfileComponent } from './teachers-profile/teachers-profile.component';
 import { ChapterComponent } from './chapter/chapter.component';
 import { CourseOverviewComponent } from './course-overview/course-overview.component';
+import { SubjectComponent } from './subject/subject.component';
 
 
 
@@ -145,6 +146,10 @@ const routes: Routes = [
  {
   path:'courseOverview',
   component:CourseOverviewComponent
+ },
+ {
+  path:'subject',
+  component:SubjectComponent
  },
 ];
 

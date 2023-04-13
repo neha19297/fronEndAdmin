@@ -1,0 +1,73 @@
+@import '../../styles.scss';
+.container{
+    position: absolute;
+width: 1440px;
+height: 425px;
+left: 0px;
+top: 130px;
+
+background: linear-gradient(180deg, #35185A 0%, rgba(53, 24, 90, 0.79) 100%);
+}
+.upload{
+    position: absolute;
+width: 467px;
+height: 70px;
+left: 537px;
+top: 120px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 70px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+.searchBox{
+    position: absolute;
+width: 490px;
+height: 60px;
+left: 474px;
+top: 310px;
+
+background: #FFFFFF;
+border-radius: 15px;
+}
+mat-card{
+    position: absolute;
+width: 378px;
+height: 446px;
+// left: 123px;
+// top: 755px;
+
+background: #F6F6F6;
+border-radius: 15px;
+mat-card-content{
+    position: absolute;
+width: 318px;
+height: 29px;
+// left: 153px;
+// top: 985px;
+top: 270px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 29px;
+
+color: #290854;
+}
+}
+.mat-card-image{
+    position: absolute;
+    
+    // left: 123px;
+    // top: 755px;
+    width: 23.625rem;
+              height: 15.769rem;
+    // background: url(engineering-supplies-blueprint.jpg);
+    // border-radius: 15px 15px 0px 0px;
+    
+}
