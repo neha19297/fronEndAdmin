@@ -1,25 +1,25 @@
 @import '../../styles.scss';
 .container{
     position: absolute;
-width: 1440px;
-height: 425px;
-left: 0px;
-top: 130px;
+width: 90rem;
+height: 26.563rem;
+left: 0rem;
+top: 8.125rem;
 
 background: linear-gradient(180deg, #35185A 0%, rgba(53, 24, 90, 0.79) 100%);
 }
 .upload{
     position: absolute;
-width: 467px;
-height: 70px;
-left: 537px;
-top: 120px;
+width: 29.188rem;
+height: 4.375rem;
+left: 33.563rem;
+top: 7.5rem;
 
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
-font-size: 60px;
-line-height: 70px;
+font-size: 3.75rem;
+line-height: 4.375rem;
 display: flex;
 align-items: center;
 
@@ -27,35 +27,35 @@ color: #FFFFFF;
 }
 .searchBox{
     position: absolute;
-width: 490px;
-height: 60px;
-left: 474px;
-top: 310px;
+width: 30.625rem;
+height: 4.313rem;
+left: 29.625rem;
+top: 19.375rem;
 
 background: #FFFFFF;
-border-radius: 15px;
+border-radius: 0.938rem;
 }
 mat-card{
     position: absolute;
-width: 378px;
-height: 446px;
+width: 23.625rem;
+height: 27.875rem;
 // left: 123px;
 // top: 755px;
 
 background: #F6F6F6;
-border-radius: 15px;
+border-radius: 0.938rem;
 mat-card-content{
     position: absolute;
-width: 318px;
-height: 29px;
+width: 19.875rem;
+height: 1.813rem;
 // left: 153px;
 // top: 985px;
-top: 270px;
+top: 16.875rem;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
-font-size: 25px;
-line-height: 29px;
+font-size: 1.563rem;
+line-height: 1.813rem;
 
 color: #290854;
 }
