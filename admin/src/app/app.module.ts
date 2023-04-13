@@ -56,6 +56,7 @@ import { TeachersProfileComponent } from './teachers-profile/teachers-profile.co
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { ChapterComponent } from './chapter/chapter.component';
 import { CourseOverviewComponent } from './course-overview/course-overview.component';
+import { DashboardSidenavComponent } from './dashboard/dashboard-sidenav/dashboard-sidenav.component';
 // import {MatSnackBar} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
@@ -89,6 +90,7 @@ import { CourseOverviewComponent } from './course-overview/course-overview.compo
     TeachersProfileComponent,
     ChapterComponent,
     CourseOverviewComponent,
+    DashboardSidenavComponent,
      
     
   ],

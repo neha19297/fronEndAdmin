@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
   // loading: boolean = false; 
   ProfileDP='';
   fileName = '';  
-
+ 
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {

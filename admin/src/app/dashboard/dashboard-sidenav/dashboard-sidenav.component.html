@@ -1,0 +1,23 @@
+<mat-toolbar>
+    <button mat-button style="left:0rem;"><mat-icon (click)="sidenav.toggle();">menu</mat-icon></button>   
+    </mat-toolbar>
+    <mat-sidenav-container>
+        <mat-sidenav #sidenav mode="push">
+            <mat-list>
+                <mat-list-item> <a routerLink=""> HOME</a></mat-list-item>
+                <mat-list-item> <a routerLink="/createCourse"> Create Course</a></mat-list-item>
+                <mat-list-item> <a routerLink="/draft"> Draft</a></mat-list-item>
+                <mat-list-item> <a routerLink="/myUploads"> Uploads</a></mat-list-item>
+
+                <mat-list-item> <a routerLink="/payment"> Payment History</a></mat-list-item>
+                <mat-list-item> <a routerLink="/logOut"> Logout</a></mat-list-item>
+
+            </mat-list>
+           
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+ 

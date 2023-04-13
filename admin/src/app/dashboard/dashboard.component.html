@@ -1,7 +1,16 @@
 <div>
     <div>
       <header >
-        <li>
+        <li style="padding-left:0rem;"><app-dashboard-sidenav></app-dashboard-sidenav></li>
+          
+      
+       
+          
+
+
+
+
+        <li style="margin-left: 10%;">
             <h3> Global Genius Index <br>(G2I)</h3>
         </li>
         <li>
@@ -13,17 +22,15 @@
            <button routerLink="/myProfile">My Profile</button>
         </li>
         <li style="margin-left: 70%;margin-top: 3%;"><a routerLink="language"> <img src="/assets/Vector.png" > 
-            <!-- <mat-form-field appearance="fill"> -->
-              <br>
-
+          <!-- <mat-form-field appearance="fill"> -->
               <!-- <mat-label>Language</mat-label> -->
-                <select matNativeControl >
-                  <option value="english">English</option> 
-                  <option value="hindi">Hindi</option>
-                  <option value="marathi">Marathi</option>
-                </select>
-              <!-- </mat-form-field> -->
-        </a></li>
+              <select matNativeControl style="margin-left: 1090px;" >
+               <option value="english">English</option> 
+                <option value="hindi">Hindi</option>
+                <option value="marathi">Marathi</option>
+              </select>
+            <!-- </mat-form-field> -->
+      </a></li>
     </header>
     </div>
     <div style="position: absolute;
@@ -35,21 +42,7 @@
     background: #35185A;" >
     <h3 class="heading" style="color:white">Experience Your Teaching Ability</h3>
 <h5 class="sub-heading" style="color:white">Become an instructor and change lives — including your own</h5>
-    <button style="position: absolute;
-    width: 14.938rem;
-    height: 5.938rem;
-    left: 15.75rem;
-    top: 22.188rem;
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 800;
-font-size: 32px;
-line-height: 38px;
-display: flex;
-align-items: center;
-text-align: center;
-    background: #BB84E8;
-    border-radius: 0.938rem;" routerLink="/createCourse">Create your course</button>
+    <button class="course_button" routerLink="/createCourse">Create your course</button>
     <!-- <div>
       <input type="file" class="file-input"  
     (change)="onFileSelected($event)" #fileUpload>  
@@ -72,10 +65,19 @@ text-align: center;
  height: 441px;
  left: 906px;
  top: 7px;">
-       <img [src]="ProfileDP" alt="Profile DP" style="width: 449px;
+ <button (click)="fileupload.click()" style="background-color: #2E0A57; border:none;"> 
+  <img [src]="ProfileDP" alt="Profile DP" style="width: 449px;">
+</button>
+  <input type="file"
+   style="margin-left: 165px" 
+   (change)="selectFile($event)" #fileupload>    
+
+
+
+        <!-- <img [src]="ProfileDP" alt="Profile DP" style="width: 449px;
        height: 441px;" > <br><br>
 
-  <input type="file" style="margin-left: 165px" (change)="selectFile($event)">  
+  <input type="file" style="margin-left: 165px" (change)="selectFile($event)">    -->
   <br>
  </div>
  
