@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidebarServiceService } from 'src/app/services/sidebar-service.service';
 
 @Component({
   selector: 'app-dashboard-sidenav',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardSidenavComponent implements OnInit {
   opened=false;
-  constructor() { }
+  constructor(private sideNavService:SidebarServiceService) { }
 
   ngOnInit(): void {
   }
-
+  clickMenu() { 
+    this.sideNavService.toggle();
+  }
 }
