@@ -1,0 +1,37 @@
+@import '../../styles.scss';
+mat-card{
+    position: absolute;
+width: 378px;
+height: 446px;
+// left: 123px;
+// top: 755px;
+
+background: #F6F6F6;
+border-radius: 15px;
+mat-card-content{
+    position: absolute;
+width: 318px;
+height: 29px;
+// left: 153px;
+// top: 985px;
+top: 270px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 29px;
+
+color: #290854;
+}
+}
+.mat-card-image{
+    position: absolute;
+    
+    // left: 123px;
+    // top: 755px;
+    width: 23.625rem;
+              height: 15.769rem;
+    // background: url(engineering-supplies-blueprint.jpg);
+    // border-radius: 15px 15px 0px 0px;
+    
+}
