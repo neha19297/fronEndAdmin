@@ -63,4 +63,48 @@ left: 0px;
 top: 131px;
 
 background: #D9D9D9;
+h2{
+    position: absolute;
+width: 586px;
+height: 61px;
+left: 200px;
+top: 100px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 61px;
+/* identical to box height */
+
+
+color: #2E0B57;
+}
+h4{
+    position: absolute;
+    width: 1194px;
+    height: 30px;
+    left: 200px;
+    // top: 242px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    
+    color: #403251 
+}
+}
+.btn{
+    position: absolute;
+width: 217px;
+height: 60px;
+// left: 448px;
+top: 450px;
+
+background: #35185A;
+border-radius: 15px;
 }
