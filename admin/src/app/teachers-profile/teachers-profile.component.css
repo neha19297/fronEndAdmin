@@ -1,0 +1,48 @@
+.common_header {
+  display: flex;
+  position: absolute;
+  width: 90rem;
+  height: 8.125rem;
+  left: 0rem;
+  top: 0rem;
+  background: #FFFFFF;
+}
+.common_header h3 {
+  position: absolute;
+  width: 23rem;
+  height: 2.875rem;
+  left: 7.438rem;
+  top: 2rem;
+  color: #2E0A57;
+}
+.common_header a {
+  position: absolute;
+  width: 3.375rem;
+  height: 1.438rem;
+  left: 39.438rem;
+  top: 3.375rem;
+  color: #2E0A57;
+}
+.common_header h2 {
+  position: absolute;
+  width: 16rem;
+  height: 1.938rem;
+  left: 68.938rem;
+  top: 2.938rem;
+  color: #2E0A57;
+}
+
+mat-label {
+  color: #2C0065;
+}
+
+button {
+  position: absolute;
+  width: 224px;
+  height: 60px;
+  left: 631px;
+  top: 794px;
+  background: #2E0A57;
+  border-radius: 15px;
+  color: white;
+}/*# sourceMappingURL=teachers-profile.component.css.map */

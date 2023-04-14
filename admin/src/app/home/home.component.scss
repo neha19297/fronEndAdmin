@@ -11,19 +11,20 @@ top: 3.813rem;
 background: #F6F6F6;
 border: 0.063rem solid #000000;
 border-radius: 0.983rem;
-    mat-card-header{
+//     mat-card-header{
         
-width: 16.188rem;
-height: 8.25rem;
-left: 6.25rem;
-top: 50rem;
-margin-left: -1.063rem;
-    margin-top: -1.063rem;
-background-color: #A16AE6;
-    }
+// width: 16.188rem;
+// height: 8.25rem;
+// // left: 5.25rem;
+// top: 50rem;
+// margin-left: -1.063rem;
+//     margin-top: -1.063rem;
+// // background-color: #A16AE6;
+//     }
+
 }
-.mat-card-image{
-    margin-left: 18%;
+.image_provide{
+    margin-left: 10%;
     // padding: 2%;
 }
 .provide{
@@ -36,14 +37,27 @@ h3{
 width: 17.875rem;
 height: 3.5rem;
 left: 7rem;
-top: 78.375rem;
+top: 81.375rem;
 
 font-family: 'Roboto';
 font-style: normal;
-font-weight: 500;
-font-size: 3rem;
+font-weight: 400;
+font-size: 2.5rem;
 line-height: 3.5rem;
 text-align: center;
 
 color: #000000;
+}
+.header_img{
+    position: absolute;
+width: 254px;
+height: 133px;
+left: 6%;
+top: 0px;
+
+
+border-radius: 15px;
+}
+.student_img{
+    margin-left:20%;
 }
