@@ -32,7 +32,7 @@ videoName='';
     .subscribe((result)=>{
       console.log(result)
       if(result){
-this.route.navigate(['courseCard'])
+this.route.navigate(['subject'])
       };
       
     });

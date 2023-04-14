@@ -29,6 +29,7 @@ import { TeachersProfileComponent } from './teachers-profile/teachers-profile.co
 import { ChapterComponent } from './chapter/chapter.component';
 import { CourseOverviewComponent } from './course-overview/course-overview.component';
 import { SubjectComponent } from './subject/subject.component';
+import { VideoCamComponent } from './video-cam/video-cam.component';
 
 
 
@@ -151,6 +152,11 @@ const routes: Routes = [
   path:'subject',
   component:SubjectComponent
  },
+ {
+  path:'videoCam',
+  component:VideoCamComponent
+ },
+
 ];
 
 @NgModule({
